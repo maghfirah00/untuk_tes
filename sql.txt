@@ -1,0 +1,16 @@
+CREATE TABLE `calon_mahasiswa` (
+	`no_pendaftaran` int(11) NOT NULL,
+	`nama` varchar(250) DEFAULT NULL,
+	`jkl` VARCHAR(2) DEFAULT NULL,
+	`telepon` VARCHAR(15) DEFAULT NULL,
+	`kota` VARCHAR(50) DEFAULT NULL,
+	`tgl` DATETIME DEFAULT NULL,
+	`alamat` VARCHAR(250) DEFAULT NULL,
+	`prodi` VARCHAR(150) DEFAULT NULL
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `calon_mahasiswa`
+	ADD PRIMARY KEY (`no_pendaftaran`);
+	
+ALTER TABLE `calon_mahasiswa`
+	MODIFY `no_pendaftaran` INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
